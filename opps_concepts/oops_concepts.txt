@@ -1,0 +1,40 @@
+Class : 
+A class is a collection of objects. Classes are blueprints for creating objects. 
+A class defines a set of attributes and methods that the created objects (instances) 
+can have .
+
+class bug:
+    specific = 192.20 # class attributes
+    def __init__(self,a1,a2):
+        self.a1=a1 # instance attributes
+        self.a2=a2 
+bug1=bug(11,12)
+print(bug1.a1)
+
+""" 
+    __init__() is a constructor method that runs automatically when a new object is created. 
+    It is used to initialize object data.
+self refers to the current object, allowing each object to store and access its own data.
+self.a1 and self.a2 are instance attributes, unique to each a1 and a2 object created from the class.
+
+Four Pillars of OOPs : 
+Four Pillars of Object-Oriented Programming (OOP) form the foundation for designing structured, 
+reusable and maintainable software.
+
+1. Encapsulation.
+2. Inheritance.
+3. Polymorphism.
+4. Abstraction.
+
+1. Encapsulation. 
+    Encapsulation is hiding unnecessary implementation details from the user and 
+    providing controlled access to the data.
+
+
+
+
+
+
+
+
+    

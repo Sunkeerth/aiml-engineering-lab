@@ -1,0 +1,206 @@
+# AI/ML Mastery Roadmap — Basic to Research Level
+
+A complete topic tree across four pillars: **Classical ML**, **Neural Networks / Deep Learning**, **Reinforcement Learning**, and **Agentic AI**. Each pillar is split into Basic → Intermediate → Advanced → Research tiers.
+
+---
+
+## PILLAR 1: Classical Machine Learning
+
+### Basic
+- Linear Regression (OLS, cost function, normal equation)
+- Logistic Regression (sigmoid, decision boundary)
+- Gradient Descent (batch, stochastic, mini-batch)
+- Train/test/validation split, cross-validation (k-fold)
+- Bias-variance tradeoff, overfitting/underfitting
+- Regularization: L1 (Lasso), L2 (Ridge), Elastic Net
+- Evaluation metrics: accuracy, precision, recall, F1, ROC-AUC, confusion matrix
+- k-Nearest Neighbors (KNN)
+- Naive Bayes (Gaussian, Multinomial)
+- Decision Trees (Gini, entropy, information gain)
+
+### Intermediate
+- Support Vector Machines (kernels: linear, RBF, polynomial; margin, soft margin)
+- Ensemble methods: Bagging, Random Forests
+- Boosting: AdaBoost, Gradient Boosting, XGBoost, LightGBM, CatBoost
+- Dimensionality reduction: PCA, LDA, t-SNE
+- Clustering: K-Means, Hierarchical, DBSCAN, Gaussian Mixture Models (EM algorithm)
+- Feature engineering & selection (mutual information, chi-square, RFE)
+- Hyperparameter tuning: Grid Search, Random Search
+- Handling imbalanced data: SMOTE, class weighting
+- Time series basics: ARIMA, seasonality, stationarity
+
+### Advanced
+- Bayesian ML: Bayesian linear regression, MAP vs MLE, priors/posteriors
+- Gaussian Processes
+- Probabilistic Graphical Models: Bayesian Networks, Markov Random Fields, HMMs
+- Kernel methods theory (Mercer's theorem, RKHS)
+- Advanced boosting theory (loss function customization, regularized trees)
+- Bayesian Optimization (for hyperparameter search)
+- Statistical learning theory basics: VC dimension, PAC learning
+- Causal inference: confounders, do-calculus, propensity scores
+
+### Research-Level
+- Learning theory: Rademacher complexity, generalization bounds
+- Online learning & bandit algorithms (UCB, Thompson Sampling)
+- Federated learning (classical ML side)
+- Robust statistics & adversarial robustness in classical models
+- AutoML / Neural Architecture Search foundations
+- Causal ML (double machine learning, causal discovery algorithms)
+
+---
+
+## PILLAR 2: Neural Networks & Deep Learning
+
+### Basic
+- Perceptron, Multi-Layer Perceptron (MLP)
+- Activation functions: Sigmoid, Tanh, ReLU, Leaky ReLU
+- Forward propagation, Backpropagation (chain rule)
+- Loss functions: MSE, Cross-Entropy
+- Optimizers: SGD, Momentum, RMSProp, Adam
+- Weight initialization (Xavier, He)
+- Batch Normalization, Dropout (regularization for NN)
+- Universal Approximation Theorem (concept level)
+
+### Intermediate
+- Convolutional Neural Networks (CNNs): convolution, pooling, stride, padding
+- CNN Architectures: LeNet, AlexNet, VGG, ResNet (skip connections), Inception, EfficientNet
+- Recurrent Neural Networks (RNNs), vanishing/exploding gradients
+- LSTM, GRU (gating mechanisms)
+- Sequence-to-sequence models, encoder-decoder
+- Word embeddings: Word2Vec, GloVe
+- Autoencoders (vanilla, denoising, sparse)
+- Transfer learning & fine-tuning
+- Object detection basics: YOLO, Faster R-CNN, SSD
+- Semantic segmentation: U-Net, Mask R-CNN
+
+### Advanced
+- Attention mechanism (Bahdanau, Luong)
+- Transformer architecture (self-attention, multi-head attention, positional encoding)
+- BERT, GPT-family architecture differences (encoder-only vs decoder-only vs encoder-decoder)
+- Vision Transformers (ViT)
+- Generative models: GANs (vanilla, DCGAN, StyleGAN, Wasserstein GAN)
+- Variational Autoencoders (VAE) — ELBO, reparameterization trick
+- Diffusion Models (DDPM, score-based generative models)
+- Contrastive learning: SimCLR, CLIP, self-supervised learning
+- Graph Neural Networks (GCN, GAT, message passing)
+- Model compression: pruning, quantization, knowledge distillation
+- Neural ODEs
+- Multi-modal architectures (vision-language models)
+
+### Research-Level
+- Scaling laws (Chinchilla, Kaplan et al.)
+- Mixture of Experts (MoE), sparse activation models
+- Mechanistic interpretability (circuits, feature visualization, probing)
+- In-context learning theory
+- RLHF / DPO / RLAIF (alignment fine-tuning techniques)
+- State Space Models (Mamba, S4) as Transformer alternatives
+- Flash Attention, efficient attention mechanisms (linear attention, sparse attention)
+- Neural architecture search (DARTS, evolutionary NAS)
+- Continual learning / catastrophic forgetting solutions
+- Emergent abilities & grokking phenomena
+- Foundation model theory & generalization
+
+---
+
+## PILLAR 3: Reinforcement Learning
+
+### Basic
+- Markov Decision Processes (MDP): states, actions, rewards, transitions
+- Policy, Value function, Q-function
+- Bellman Equations (expectation & optimality)
+- Dynamic Programming: Policy Iteration, Value Iteration
+- Exploration vs Exploitation, epsilon-greedy
+- Monte Carlo methods
+- Temporal Difference Learning: TD(0), SARSA, Q-Learning
+
+### Intermediate
+- Function approximation in RL (linear, then neural)
+- Deep Q-Networks (DQN): experience replay, target networks
+- DQN variants: Double DQN, Dueling DQN, Prioritized Experience Replay
+- Policy Gradient methods: REINFORCE
+- Actor-Critic architecture
+- Advantage function, baseline subtraction
+- N-step returns, eligibility traces (TD(λ))
+- Continuous action spaces basics
+
+### Advanced
+- Proximal Policy Optimization (PPO)
+- Trust Region Policy Optimization (TRPO)
+- Deep Deterministic Policy Gradient (DDPG), TD3
+- Soft Actor-Critic (SAC) — max-entropy RL
+- Model-Based RL: world models, Dyna-Q, MBPO
+- Multi-Agent RL (MARL): cooperative/competitive settings, MADDPG
+- Hierarchical RL (options framework, feudal networks)
+- Imitation Learning: Behavior Cloning, DAgger
+- Inverse Reinforcement Learning (IRL)
+- Sim-to-real transfer, domain randomization (directly relevant to your robotics sim work)
+- Reward shaping, sparse reward problem
+
+### Research-Level
+- Offline RL / Batch RL (CQL, IQL, decision transformers)
+- Meta-RL (learning to learn policies)
+- RLHF (Reinforcement Learning from Human Feedback) — used in LLM alignment
+- Model-based planning with learned dynamics (MuZero-style)
+- Exploration via intrinsic motivation (curiosity-driven RL, RND)
+- Distributional RL (C51, QR-DQN)
+- Safe RL / constrained MDPs
+- World models for embodied agents (Dreamer series)
+- Robot learning: sim-to-real with domain adaptation, learning from demonstrations at scale
+
+---
+
+## PILLAR 4: Agentic AI
+
+### Basic
+- What defines an "agent": perception → reasoning → action loop
+- Prompt engineering fundamentals
+- Tool use / function calling basics
+- Chain-of-Thought (CoT) prompting
+- ReAct pattern (Reason + Act)
+- Simple task decomposition
+
+### Intermediate
+- Agent memory: short-term (context window) vs long-term (vector stores)
+- Retrieval-Augmented Generation (RAG) — chunking, embeddings, retrieval strategies
+- Tool/function calling architecture, structured outputs (JSON schemas)
+- Planning agents: task decomposition, subgoal generation
+- Single-agent vs multi-agent orchestration
+- Agent evaluation: task success rate, tool-call accuracy
+- Basic agent frameworks concepts (LangChain, LlamaIndex, AutoGen style patterns)
+
+### Advanced
+- Multi-agent systems: role specialization, communication protocols
+- Agent orchestration patterns: supervisor/worker, debate, voting
+- Long-horizon planning & self-reflection (Reflexion-style architectures)
+- Tree-of-Thought / Graph-of-Thought reasoning
+- Tool creation (agents that write their own tools)
+- Memory architectures: episodic memory, semantic memory, working memory for agents
+- Grounding agents in real environments (embodied agents, robotics + LLM integration)
+- Agent safety: sandboxing, permission scoping, human-in-the-loop
+- Model Context Protocol (MCP) and standardized tool interfaces
+- Evaluation harnesses for agentic benchmarks (SWE-bench, WebArena, AgentBench style)
+
+### Research-Level
+- Autonomous multi-step agents with self-correction loops
+- Learning from agent trajectories (agent fine-tuning / distillation)
+- LLM + RL hybrid agents (using RL to train agentic behavior, not just RLHF)
+- Emergent multi-agent cooperation/competition dynamics
+- World models for language agents (agents that simulate outcomes before acting)
+- Scalable oversight & agent alignment (constitutional AI, debate for alignment)
+- Compositional generalization in agents
+- Robotics-grounded agentic AI: LLM-driven task planning + low-level control policies (directly ties to your simulation + RL interests)
+- Agent-to-agent economies / negotiation protocols
+- Interpretability of agentic decision-making (why did the agent choose this action)
+
+---
+
+## Suggested Path Given Your Background
+
+Since you're already working on **MPC-based navigation** and a **humanoid robot simulation**, your fastest route to "strongest in the room" is:
+
+1. **Solidify** Advanced RL (PPO, SAC, sim-to-real) — direct overlap with your Gazebo/ROS 2 work
+2. **Push into** Research-level RL (offline RL, model-based planning) since these matter most for real robot deployment
+3. **Bridge** RL + Agentic AI — this is where the frontier is: LLM-based high-level planners controlling low-level RL/MPC controllers
+4. **Go deep** on Transformers (Advanced NN tier) since they underpin both LLM agents and modern robot learning (RT-2, VLA models)
+
+If you want, I can turn any single pillar (e.g., RL or Agentic AI) into a week-by-week study plan with papers, courses, and hands-on projects.

@@ -1,0 +1,320 @@
+
+
+# Array
+
+### What is an Array?
+
+An array is a data structure that stores multiple elements in a sequential order, allowing fast access using an index.
+
+**Example:**
+
+```python
+numbers = [10, 20, 30, 40]
+print(numbers[2])   # 30
+```
+
+---
+
+# Advantages of Array
+
+### 1. Fast Access
+
+Arrays allow direct access to any element using its index, making retrieval very fast.
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+print(numbers[1])   # 20
+```
+
+---
+
+### 2. Easy Traversal
+
+Arrays make it easy to process every element using a loop.
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+for num in numbers:
+    print(num)
+```
+
+---
+
+### 3. Efficient Memory Usage
+
+Arrays store elements in order, making memory usage efficient compared to storing separate variables.
+
+**Example:**
+
+```python
+marks = [80, 75, 90, 85]
+```
+
+---
+
+### 4. Easy Searching and Sorting
+
+Arrays can be searched and sorted using built-in methods.
+
+**Example:**
+
+```python
+numbers = [30, 10, 20]
+numbers.sort()
+print(numbers)
+```
+
+---
+
+# Disadvantages of Array
+
+### 1. Slow Insertion
+
+Inserting an element in the middle requires shifting other elements.
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+numbers.insert(1, 15)
+print(numbers)
+```
+
+---
+
+### 2. Slow Deletion
+
+Deleting an element also shifts the remaining elements.
+
+**Example:**
+
+```python
+numbers = [10, 20, 30]
+numbers.remove(20)
+print(numbers)
+```
+
+---
+
+### 3. Traditional Arrays Have Fixed Size
+
+In languages like C, the array size cannot be changed after creation.
+
+**Example (C):**
+
+```c
+int arr[5];
+```
+
+---
+
+# Reference Array (Reference)
+
+### What is a Reference?
+
+A reference is the memory address of an object. In Python, variables store references to objects instead of the actual data.
+
+**Example:**
+
+```python
+a = [1, 2, 3]
+b = a
+```
+
+---
+
+### Why do we use References?
+
+References allow multiple variables to access the same object without creating a duplicate, which saves memory and improves performance.
+
+**Example:**
+
+```python
+a = [1, 2, 3]
+b = a
+
+b.append(4)
+
+print(a)
+```
+
+**Output**
+
+```python
+[1, 2, 3, 4]
+```
+
+---
+
+# Python Data Types
+
+## 1. int
+
+The `int` data type stores whole numbers without decimal values.
+
+**Example:**
+
+```python
+age = 22
+```
+
+---
+
+## 2. float
+
+The `float` data type stores numbers with decimal values.
+
+**Example:**
+
+```python
+price = 99.99
+```
+
+---
+
+## 3. complex
+
+The `complex` data type stores numbers that contain a real and an imaginary part.
+
+**Example:**
+
+```python
+num = 2 + 3j
+```
+
+---
+
+## 4. bool
+
+The `bool` data type stores logical values, either `True` or `False`.
+
+**Example:**
+
+```python
+is_student = True
+```
+
+---
+
+## 5. str
+
+The `str` data type stores text or characters.
+
+**Example:**
+
+```python
+name = "Sunkeerth"
+```
+
+---
+
+## 6. list
+
+A `list` stores multiple items in order and can be modified after creation.
+
+**Example:**
+
+```python
+fruits = ["Apple", "Mango", "Orange"]
+```
+
+---
+
+## 7. tuple
+
+A `tuple` stores multiple ordered items but cannot be modified after creation.
+
+**Example:**
+
+```python
+point = (10, 20)
+```
+
+---
+
+## 8. set
+
+A `set` stores unique values and automatically removes duplicates.
+
+**Example:**
+
+```python
+numbers = {1, 2, 2, 3}
+print(numbers)
+```
+
+**Output**
+
+```python
+{1, 2, 3}
+```
+
+---
+
+## 9. dictionary (`dict`)
+
+A dictionary stores data as key-value pairs.
+
+**Example:**
+
+```python
+student = {
+    "name": "Sunkeerth",
+    "age": 22
+}
+```
+
+---
+
+## 10. bytes
+
+The `bytes` data type stores immutable binary data.
+
+**Example:**
+
+```python
+data = b"Hello"
+```
+
+---
+
+## 11. bytearray
+
+A `bytearray` stores mutable binary data, allowing modification after creation.
+
+**Example:**
+
+```python
+data = bytearray(b"ABC")
+```
+
+---
+
+## 12. memoryview
+
+A `memoryview` provides direct access to binary data without creating a copy, making it efficient for large data.
+
+**Example:**
+
+```python
+data = bytes([1, 2, 3])
+view = memoryview(data)
+```
+
+---
+
+## 13. frozenset
+
+A `frozenset` stores unique elements like a set but cannot be modified after creation.
+
+**Example:**
+
+```python
+colors = frozenset({"red", "green", "blue"})
+```
+
+These are concise, interview-ready definitions with one example each, making them easy to remember and explain.
