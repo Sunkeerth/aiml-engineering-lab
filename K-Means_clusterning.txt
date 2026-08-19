@@ -1,0 +1,14 @@
+The Basics (Centroid-Based Clustering)
+
+Algorithm: K-Means
+K-Means is the foundational algorithm for clustering. It partitions your dataset into k distinct, non-overlapping groups by measuring the straightforward Euclidean distance between data points.
+
+How it works:
+You dictate the number of clusters (k). The algorithm randomly places k "centroids" (center points) in the data space. 
+It assigns every data point to its nearest centroid, then moves the centroid to the exact center of those points. It repeats this until the centroids stop moving.
+
+The Limitation:
+It assumes every cluster is a perfect sphere and roughly the same size.
+
+Practical Application:
+Color quantization in computer vision. If you are processing a live feed from an ESP32-cam and need to rapidly segment the image into distinct colored objects, K-Means easily groups similar pixel values together.
